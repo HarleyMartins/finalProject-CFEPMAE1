@@ -1,0 +1,240 @@
+/* Reset básico e font-family */
+* {
+    margin: 0; /* Remove as margens de todos os elementos */
+    padding: 0; /* Remove o preenchimento de todos os elementos */
+    box-sizing: border-box; /* Inclui o preenchimento e as bordas nas dimensões dos elementos */
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão para o site */
+}
+
+/* Estilo básico para o body */
+body {
+    background-image: url('https://via.placeholder.com/1920x1080.png?text=Background+Image'); /* Define uma imagem de fundo */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    font-size: 16px; /* Define o tamanho da fonte base */
+    color: #333; /* Define a cor do texto */
+    display: flex; /* Utiliza o Flexbox para alinhar os itens dentro do body */
+    justify-content: center; /* Alinha o conteúdo horizontalmente ao centro */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela */
+}
+
+/* Contêiner principal */
+.container {
+    width: 100%; /* O contêiner ocupa toda a largura disponível */
+    max-width: 1200px; /* Define um tamanho máximo para o contêiner */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    padding: 20px; /* Espaçamento interno de 20px */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do contêiner */
+    overflow: hidden; /* Evita que qualquer conteúdo ultrapasse os limites do contêiner */
+    margin: 0 15px; /* Espaçamento nas laterais para evitar que o contêiner ultrapasse os limites */
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center; /* Alinha o texto do cabeçalho ao centro */
+    margin-bottom: 30px; /* Espaçamento abaixo do cabeçalho */
+}
+
+.header h1 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    color: #3498db; /* Cor do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.header p {
+    font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
+    color: #555; /* Cor do texto do parágrafo */
+}
+
+/* Formulário de cadastro */
+.form-section {
+    margin-bottom: 40px; /* Espaçamento abaixo da seção do formulário */
+    background-color: #fff; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno de 20px */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.form-section h2 {
+    text-align: center; /* Alinha o título do formulário ao centro */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #2c3e50; /* Cor do título */
+}
+
+.form-section input,
+.form-section select,
+.form-section button {
+    width: 100%; /* Os inputs, selects e botões ocupam toda a largura disponível */
+    padding: 12px; /* Espaçamento interno */
+    margin: 8px 0; /* Espaçamento vertical entre os elementos */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Estilo do botão do formulário */
+.form-section button {
+    background-color: #3498db; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-weight: bold; /* Negrito para o texto */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Hover do botão */
+.form-section button:hover {
+    background-color: #2980b9; /* Muda a cor do botão quando o mouse passa por cima */
+}
+
+/* Seção de alunos */
+.students-section {
+    margin-bottom: 40px; /* Espaçamento abaixo da seção de alunos */
+}
+
+.students-section h2 {
+    text-align: center; /* Alinha o título ao centro */
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #2c3e50; /* Cor do título */
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%; /* A tabela ocupa toda a largura disponível */
+    border-collapse: collapse; /* Remove o espaçamento entre as células da tabela */
+    margin-top: 20px; /* Espaçamento acima da tabela */
+    table-layout: fixed; /* Garante que a tabela se ajuste bem */
+}
+
+/* Estilo das células da tabela */
+th, td {
+    padding: 12px; /* Espaçamento interno das células */
+    text-align: left; /* Alinha o texto à esquerda */
+    word-wrap: break-word; /* Garante que o texto nas células da tabela não ultrapasse o limite */
+}
+
+/* Estilo do cabeçalho da tabela */
+th {
+    background-color: #2980b9; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+/* Estilo das linhas pares da tabela */
+tr:nth-child(even) {
+    background-color: #f4f4f4; /* Cor de fundo para as linhas pares */
+}
+
+/* Estilo dos botões dentro da tabela */
+button {
+    padding: 8px 12px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    background-color: #e74c3c; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Hover do botão de excluir */
+button:hover {
+    background-color: #c0392b; /* Muda a cor quando o mouse passa por cima */
+}
+
+/* Estilo do botão de editar */
+button:nth-child(2) {
+    background-color: #f39c12; /* Cor de fundo do botão de editar */
+}
+
+/* Hover do botão de editar */
+button:nth-child(2):hover {
+    background-color: #e67e22; /* Muda a cor quando o mouse passa por cima */
+}
+
+/* Estilo dos ícones de editar e excluir */
+.actions i {
+    font-size: 1.5rem; /* Tamanho dos ícones */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Hover dos ícones */
+.actions i:hover {
+    color: #3498db; /* Muda a cor dos ícones quando o mouse passa por cima */
+}
+
+/* Animação de fade-in */
+.fadeIn {
+    animation: fadeIn 1s ease-in-out; /* Aplica a animação de fade-in */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(-10px); /* Desloca para cima */
+    }
+    100% {
+        opacity: 1; /* Fica visível */
+        transform: translateY(0); /* Volta para a posição original */
+    }
+}
+
+/* Estilo do footer */
+.footer {
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #3498db; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    margin-top: 40px; /* Espaçamento acima do footer */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.footer p {
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduz o padding do contêiner */
+    }
+
+    .header h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+
+    .form-section h2, .students-section h2 {
+        font-size: 1.6rem; /* Reduz o tamanho do título das seções */
+    }
+
+    table {
+        font-size: 14px; /* Reduz o tamanho da fonte na tabela */
+    }
+
+    .form-section input,
+    .form-section select,
+    .form-section button {
+        padding: 10px; /* Reduz o padding nos inputs e botões */
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.6rem; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .form-section h2, .students-section h2 {
+        font-size: 1.4rem; /* Reduz o tamanho do título das seções */
+    }
+
+    .form-section input,
+    .form-section select,
+    .form-section button {
+        padding: 8px; /* Reduz o padding ainda mais */
+    }
+}
